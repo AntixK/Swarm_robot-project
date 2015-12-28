@@ -54,4 +54,4 @@ The is under GPL v3.0 license. You can duplicate, modify the code freely.
 
 copyright (c) 2015 Anand Krishnamoorthy
 
-For More information: [Swarm Project] (https://sites.google.com/site/swarmrobotproject/)
+For More information: [Swarm_Robot_Project] (https://sites.google.com/site/swarmrobotproject/)
