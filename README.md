@@ -1,7 +1,7 @@
 #Swarm Robot Project
 
 This code is for our B.Tech project entitled "Development of Autonomous robot swarm 
-for goal searching using ALpha Beta coodination" 
+for goal searching using Alpha Beta coodination" 
 
 #Team
 Anand krishnamoorthy, Girish Kumar, Atul B Chandran, Prof. J. Balaji
