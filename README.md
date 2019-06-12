@@ -14,38 +14,38 @@ These are the Arduino .ino files for each swarm robot labelled 'A', 'B' and 'C'.
 
 ALPHA BETA FLOW CHART
 
-  /* Alpha beta algorithm*/
+  #### Alpha beta algorithm
 
    START
 
-  * step 1: establish connection - ping test :
+  - step 1: establish connection - ping test :
       each bot shud send and receive their ID to all others including HB */
 
-  * Step 2: set alpha mode for all the bots:
+  - Step 2: set alpha mode for all the bots:
      (i)  Turn on the red LED light
      (ii) disperse in different directions- at 20, 140, 260 deg for each bot depending on how close the direction is to each bot
      (iii) move in the same direction and navigate through obstacles while communicating the sensor measures to other bots and HB */
 
-  * Step 3: check the time elapsed
+  - Step 3: check the time elapsed
      if it is less than threshold time then the step 2 actions are continued
      else execute step 4 */
 
-  * Step 4: Switching mode phase 1: Bsed on the sensor measure execute beta mode (the lowest measure bot becomes the beta bot)
+  - Step 4: Switching mode phase 1: Bsed on the sensor measure execute beta mode (the lowest measure bot becomes the beta bot)
     (i) switch off the red LED and ON the blue LED
     (ii) stop navigation and keep receiving the data from other bots
     (iii) follow the highest sensor measure bot SLOWLY (i.e move every small intervals of time)
     (iv) still keep getting ur sensor measure... */
 
-  * Step 5: Check the time elapsed
+  - Step 5: Check the time elapsed
      if it is less than the second time threshold, then continue step 4 irrespective of the
      sensor measure sof the other two bots else step 6 */
 
-  * Step 6: Switching mode phase 2: if sensor measure of the other two alpha bots is
+  - Step 6: Switching mode phase 2: if sensor measure of the other two alpha bots is
      less than or equal to the current measure of the beta bot then switch that bot to the beta mode as shown in Step 4
      (by the end there will be only one alpha bot) the bots must continue their nagivation towards the target while the other
       alpha bot wanders until the third threshold after which it switches to beta mode*/
 
-  * Step 7: the beta bots must nagivate till it reaches the target whose position will be confirmed by the HB and
+  - Step 7: the beta bots must nagivate till it reaches the target whose position will be confirmed by the HB and
      all the bots shall converge at the target */
 
   STOP
